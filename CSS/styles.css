@@ -1,7 +1,14 @@
 /* COMMON */
+@font-face {
+  font-family: 'Google Sans';
+  src: url('../assets/fonts/ProductSans-Regular.ttf') format('truetype');
+}
 .body {
   position: relative;
+  font-family: 'Google Sans', sans-serif;
+  box-sizing: border-box;
 }
+/* SIDEBAR */
 .sidebar {
   padding-top: 20px;
   width: 88px;
@@ -45,7 +52,7 @@
 .sidebar .menu .expand .label {
   font-weight: 500;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Google Sans', sans-serif;
 }
 .sidebar .menu div {
 }
@@ -56,7 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 .sidebar .dark-mode-switch {
   box-sizing: border-box;
@@ -69,18 +76,25 @@
   border-radius: 5em;
   background-color: #e1e3e1;
 }
+/* CONTENT */
 .content-container {
   margin: 7px 7px 7px 95px;
   display: flex;
+  justify-content: center;
   min-height: 544px;
+  font-family: 'Google Sans';
 }
+/* HEADER */
 .content-container .header-content {
   width: 100%;
-  height: ;
   background-image: url('../images/primary-container background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
   border-radius: 24px;
   overflow: hidden;
 }
@@ -89,9 +103,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  max-width: 840px;
 }
 .content-container .header-content .header-title {
   font-size: 112px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
-.content-container .header-content .wrapper .header-title {
+.content-container .header-content .header-description {
+  font-size: 22px;
+  line-height: 1.4;
+  flex-wrap: wrap;
+}
+.content-container .header-content .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0b57d0;
+  margin-top: 20px;
+  min-height: 80px;
+  min-width: 223px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.content-container .header-content .btn-title {
+  font-size: 24px;
+  display: block;
+  color: #fff;
+  text-align: center;
 }
