@@ -80,13 +80,14 @@
 .content-container {
   margin: 7px 7px 7px 95px;
   display: flex;
-  justify-content: center;
-  min-height: 544px;
+  flex-direction: column;
+  justify-content: flex-start;
   font-family: 'Google Sans';
 }
 /* HEADER */
 .content-container .header-content {
   width: 100%;
+  min-height: 544px;
   background-image: url('../images/primary-container background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
