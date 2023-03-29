@@ -25,7 +25,7 @@
     />
     <link rel="stylesheet" href="./CSS/styles.css" />
     <!-- SCRIPT -->
-    <script type="module" src="./JS/script.js"></script>
+    <script defer type="module" src="./JS/script.js"></script>
   </head>
 
   <body>
@@ -41,7 +41,7 @@
         <li class="menu">
           <a href="#" class="expand">
             <div class="material-symbols-outlined">apps</div>
-            <div class="label">Get Started</div>
+            <div class="label">Get started</div>
           </a>
         </li>
         <li class="menu">
@@ -100,8 +100,83 @@
 
       <!-- MAIN -->
       <main class="main-content">
-        <!-- [FLEXBOX] column, 1 = h2, News & launches{3FLEXBOX under}, 2 = Design system updates{3+3FLEXBOX under}, 3 = Resources{2FLEXBOX pile-up} -->
-        <div class="main-container"></div>
+        <!-- [FLEXBOX] column, 
+          1 = h2, News & launches{3FLEXBOX under}, 
+          2 = h2, Design system updates{3+3FLEXBOX under}, 
+          3 = h2, Resources{2FLEXBOX pile-up} -->
+        <div class="main-container">
+          <!-- [FLEXBOX] column -->
+          <div class="content-top">
+            <!-- title,container FLEXBOX column -->
+            <div class="content-top-title">
+              <h2>News & launches</h2>
+            </div>
+            <div class="content-top-container">
+              <!-- left,center,right FLEXBOX row -->
+              <div class="content-left">
+                <!-- image,text FLEXBOX column -->
+                <div class="content-left__image"></div>
+                <div class="content-left__text">
+                  <span class="text-title">Android Developer Summit</span>
+                  <span class="text-content"
+                    >Catch Material updates and tutorials at ADS 2022, beginning
+                    October 24</span
+                  >
+                </div>
+              </div>
+              <div class="content-center">
+                <div class="content-center__image"></div>
+                <div class="content-center__text">
+                  <span class="text-title">Announcing Relay Alpha</span>
+                  <span class="text-content"
+                    >Relay streamlines design and development of custom
+                    components through Figma and Android Studio</span
+                  >
+                </div>
+              </div>
+              <div class="content-right">
+                <div class="content-right__image"></div>
+                <div class="content-right__text">
+                  <span class="text-title">New: Figma design kit for M3</span>
+                  <span class="text-content"
+                    >Jumpstart your designs with customizable, ready-made M3
+                    components available in Figma</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-middle">
+            <div class="content-middle-title">
+              <h2>Design sysyem updates</h2>
+            </div>
+            <div class="content-middle-container">
+              <div class="content-left"></div>
+              <div class="content-center"></div>
+              <div class="content-right"></div>
+            </div>
+            <div class="content-middle-container">
+              <div class="content-left"></div>
+              <div class="content-center"></div>
+              <div class="content-right"></div>
+            </div>
+          </div>
+
+          <div class="content-bottom">
+            <div class="content-bottom-title">
+              <h2>Resources</h2>
+            </div>
+            <div class="content-bottom-container">
+              <div class="content-left"></div>
+              <div class="content-right"></div>
+            </div>
+            <div class="content-bottom-container">
+              <div class="content-left"></div>
+              <div class="content-right"></div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer class="footer-content">
