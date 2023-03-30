@@ -1,5 +1,5 @@
 /* COMMON */
-*{
+* {
   box-sizing: border-box;
 }
 @font-face {
@@ -150,12 +150,12 @@
   flex-direction: column;
   align-items: center;
 }
-.text-title{
+.text-title {
   display: block;
   width: 100%;
   font-size: 24px;
 }
-.text-content{
+.text-content {
   font-size: 16px;
   width: 100%;
   display: block;
@@ -183,8 +183,9 @@
 }
 .main-container .content-top-container .content-left__image {
   height: 200px;
-  background-image: url("../images/thumb-container.png");
+  background-image: url('../images/thumb-container.png');
   background-size: cover;
+  background-position: center;
   border-radius: 24px;
 }
 .main-container .content-top-container .content-left__text {
@@ -201,6 +202,7 @@
   height: 200px;
   background-image: url('../images/thumb-container2.png');
   background-size: cover;
+  background-position: center;
   border-radius: 24px;
 }
 .main-container .content-top-container .content-center__text {
@@ -212,14 +214,14 @@
   flex-direction: column;
   background-color: #f8fafd;
   border-radius: 24px;
-
 }
 .main-container .content-top-container .content-right__image {
   height: 200px;
   background-image: url('../images/thumb-container3.png');
-  background-size: cover;  
-  border-radius: 24px;
+  background-size: cover;
+  background-position: center;
 
+  border-radius: 24px;
 }
 .main-container .content-top-container .content-right__text {
   margin: 24px;
